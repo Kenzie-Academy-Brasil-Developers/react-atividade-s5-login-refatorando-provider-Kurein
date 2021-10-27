@@ -28,7 +28,7 @@ const Home = () => {
       <form onSubmit={handleSubmit(onSubmitFunction)}>
         <input placeholder="Nome" {...register("username")} />
         {errors.username?.message}
-        <input placeholder="Senha" {...register("password")} />
+        <input placeholder="Senha" type="password" {...register("password")} />
         {errors.password?.message}
         <button type="submit">Logar</button>
       </form>
